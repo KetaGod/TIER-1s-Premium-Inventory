@@ -91,27 +91,6 @@ const productCards = [
         description: 'Another Pungent Strain'
     },
     {
-        name: 'King Size Just Shake Em',
-        price: '$10',
-        category: 'flower',
-        image: 'kingjse.jpg',
-        description: 'Over 6+ Strains Combined',
-    },
-    {
-        name: '2-Pack Just Shake Em',
-        price: '$10',
-        category: 'flower',
-        image: '2jse.jpg',
-        description: 'Same as the king size',
-    },
-    {
-        name: 'Smallies',
-        price: '$5',
-        category: 'flower',
-        image: 'smallies.jpg',
-        description: 'placeholder',
-    },
-    {
         name: 'TIER 1 Rosin Dispos',
         price: '$40',
         category: 'vapes',
