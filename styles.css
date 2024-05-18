@@ -72,21 +72,33 @@ main {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: calc(100vh * 0.3) calc(100vh * 0.3);
+    grid-gap: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     margin: 10px;
 }
 
+.product-grid {
+    display: flex;
+    overflow-x: auto;
+}
+
+.product-row {
+    flex-shrink: 0;
+}
+
 .product-card {
-    width: 100%;
-    padding: 32px;
+    width: calc(100% / 3);
+    padding: 16px;
     font-size: 14px;
     line-height: 1.5;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 10px;
+    margin: 8px;
 }
 
 .product-card img {
@@ -142,30 +154,14 @@ main {
     text-align: center;
 }
 
-/* Add media queries for different iPhone screen sizes */
-@media only screen and (max-width: 667px) {
-    .product-grid {
-       display: flex;
-        overflow-x: scroll;
+@media (max-width: 767px) {
+    .product-card {
+        width: calc(100% / 2 - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
         width: 100%;
-    }
-
-    .product-card {
-        width: 250px;
-        margin: 10px;
-    }
-}
-
-@media only screen and (max-width: 414px) {
-    .product-card {
-        width: 200px;
-        margin: 10px;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .product-card {
-        width: 150px;
-        margin: 10px;
     }
 }
