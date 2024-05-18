@@ -70,11 +70,27 @@ main {
     color: white;
 }
 
+@media (max-width: 768px) {
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .filter-buttons button {
+        margin: 0.5rem;
+    }
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: calc(100vh * 0.3) calc(100vh * 0.3);
     margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .product-card {
@@ -103,6 +119,16 @@ main {
 .product-card p {
     margin: 0;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .product-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .product-card p {
+        font-size: 0.9rem;
+    }
 }
 
 .progress-bar {
