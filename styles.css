@@ -90,7 +90,7 @@ main {
 }
 
 .product-card {
-    width: calc(100% / 3);
+    width: calc(50% - 16px);
     padding: 16px;
     font-size: 14px;
     line-height: 1.5;
