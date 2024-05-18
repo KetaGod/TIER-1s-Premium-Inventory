@@ -70,27 +70,11 @@ main {
     color: white;
 }
 
-@media (max-width: 768px) {
-    .filter-buttons {
-        flex-direction: column;
-    }
-
-    .filter-buttons button {
-        margin: 0.5rem;
-    }
-}
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: calc(100vh * 0.3) calc(100vh * 0.3);
     margin: 10px;
-}
-
-@media (max-width: 768px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .product-card {
@@ -119,16 +103,6 @@ main {
 .product-card p {
     margin: 0;
     margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-    .product-card h2 {
-        font-size: 1.2rem;
-    }
-
-    .product-card p {
-        font-size: 0.9rem;
-    }
 }
 
 .progress-bar {
@@ -166,4 +140,74 @@ main {
 
 .product-card .product-content {
     text-align: center;
+}
+
+@media only screen and (min-width: 320px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        width: calc(50% - 5px);
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card {
+        width: calc(33.333% - 5px);
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card {
+        width: calc(33.333% - 5px);
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card {
+        width: calc(33.333% - 5px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .product-card {
+        width: calc(25% - 5px);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .product-card {
+        width: calc(16.666% - 5px);
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .product-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .product-card {
+        width: calc(12.5% - 5px);
+    }
 }
