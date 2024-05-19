@@ -53,7 +53,7 @@ const productCards = [
         price: '$30',
         category: 'vapes',
         image: 'img/wcc.jpg',
-        description: 'Cereal Milk, Frozen Cherries, Strawberry Lemonade, Strawberry Cream, Mango Haze',
+        description: 'Cereal Milk, Frozen Cherries, Strawberry Lemonade, Strawberry Cream, Mango Haze, Grape Ape, Wild Berries, Lucky Charmz, Super Lemon Haze, Blackberry Kush',
     },
     {
         name: '528Hz Carts (1g)',
